@@ -1,0 +1,49 @@
+configs = dict(
+    iris=dict(
+        hyper_parameters=dict(
+            learning_rate=0.01,
+            momentum=0.99,
+            num_epoch=3,
+            batch_size=4,
+            anneal_factor=0.1,
+            anneal_milestones=[2000],
+        ),
+        data=dict(
+            indexes_path='data/raw/iris/indexes.pkl'
+        ),
+    ),
+    mnist=dict(
+        hyper_parameters=dict(
+            learning_rate=0.001,
+            momentum=0.99,
+            nesterov=True,
+            num_epoch=100,
+            batch_size=128,
+            anneal_factor=0.5,
+            anneal_milestones=[],
+        ),
+        data=dict(
+            data_path='data/raw/mnist',
+            mean=(0.1307,),
+            std=(0.3081,),
+            val_size=8800,
+        )
+    ),
+    cifar10=dict(
+        hyper_parameters=dict(
+            learning_rate=0.01,
+            momentum=0.9,
+            nesterov=True,
+            num_epoch=50,
+            batch_size=128,
+            anneal_factor=0.5,
+            anneal_milestones=[15, 30, 40],
+        ),
+        data=dict(
+            data_path='data/raw/cifar10',
+            mean=(0.4914, 0.4822, 0.4465),
+            std=(0.2023, 0.1994, 0.2010),
+            val_size=5200,
+        )
+    ),
+)

@@ -1,0 +1,23 @@
+# virtualenv
+venv
+
+# IDE related:
+.idea
+
+# Notebook related
+.ipynb_checkpoints
+
+# pycache
+__pycache__
+
+# data
+data/*
+!data/.gitkeep
+
+# scratch pad
+scratch
+
+# logs
+*.log
+**logs/
+!logs/.gitkeep
