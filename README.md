@@ -1,7 +1,6 @@
 ## Description
 
-This repo contains all code related to my Masters thesis
-involving distributed training of neural networks.
+This repo contains all code related to my Masters thesis involving distributed training of neural networks. I explore using gossip to synchronize parameters in a data-parallel setting.
 
 Link to Thesis on arXiv: https://arxiv.org/abs/1812.02407
 
